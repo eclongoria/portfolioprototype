@@ -1,0 +1,192 @@
+/* Color palette 
+forest blue green #2F3E46
+dark blue green #354F52
+medium green #52796F
+Olive green #84A98C
+Pale olive #CAD2C5
+Ghost white #F8F8FF
+Green white #EAF4F4
+*/
+
+/* CSS Grid */
+.graphic-design {
+    display:grid;
+    grid-template-columns: .25fr .25fr .25fr;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-design {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.sidebar {
+    float: left;
+    width: 90%;
+    justify-content: center;
+  }
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+  }
+
+.about-header, .footer {
+    text-align: center;
+    grid-column: 1 / -1;
+    clear: both;
+  }
+
+
+/*links*/
+a {
+    color:#354F52;
+}
+
+a:hover {
+    color: #84A98C;
+    text-decoration: underline;
+}
+
+footer a {
+    color:#84A98C;
+}
+
+footer a:hover {
+    color:#CAD2C5;
+    text-decoration: none;
+}
+
+/* Navigation */
+#navbar {
+    width:100%;
+}
+
+#nav {
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#nav, #nav ul {
+    list-style: none;
+    line-height: 1;
+}
+
+#nav a {
+    display: block;
+    width: 130px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+#nav li {
+    display:inline-block;
+    width: 135px;
+    background-color: #EAF4F4;
+    margin: 10px;
+}
+
+#nav li ul {
+    position: relative;
+    display: none;
+    background: #CAD2C5;
+    padding: 10px;
+    width: 130px;
+}
+
+  
+/* Global styles */
+body {
+    background-color: #CAD2C5;
+    margin:10px;
+    font-family: "quasimoda", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+h1, h2, h3 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+h1 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    text-shadow: #354F52 1.5px 2.5px .75px;
+    line-height: 1.2;
+    text-align: center;
+    color:#52796F;
+}
+
+h2 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25rem;  
+}
+
+@media screen and (max-width:875px) {
+    h1 {
+        font-size:3rem;
+    }
+    h2 {
+        font-size:2rem;
+    }
+}
+
+/* Portfolio */
+.portfolio-item img {
+    max-width: 600px;
+}
+
+@media screen and (max-width:1200px) {
+    .graphic-design {
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .graphic-design {
+        display: block;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .web-design {
+        display:block;
+        align-items: center;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2F3E46;
+    color:#F8F8FF;
+    width: 100%;
+}
+
