@@ -157,14 +157,30 @@ h3 {
 }
 
 /* Portfolio */
-.portfolio-item img {
+.portfolio-item img{
     max-width: 600px;
+}
+
+.portfolio-item {
+    display:grid;
+    justify-content: center;
+}
+
+.portfolio-item.graphic-design-item {
+    display: grid;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:1200px) {
     .graphic-design {
-        display: block;
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .web-design {
+        display:block;
         align-items: center;
     }
 }
@@ -176,17 +192,9 @@ h3 {
     }
 }
 
-@media screen and (max-width:1200px) {
-    .web-design {
-        display:block;
-        align-items: center;
-    }
-}
-
 /* Footer */
 footer {
     background-color: #2F3E46;
     color:#F8F8FF;
     width: 100%;
 }
-
